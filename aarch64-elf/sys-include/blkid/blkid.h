@@ -30,8 +30,8 @@
 extern "C" {
 #endif
 
-#define BLKID_VERSION   "2.37.2"
-#define BLKID_DATE      "16-Aug-2021"
+#define BLKID_VERSION   "2.38.0"
+#define BLKID_DATE      "28-Mar-2022"
 
 /**
  * blkid_dev:
