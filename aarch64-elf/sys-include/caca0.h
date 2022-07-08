@@ -1,7 +1,7 @@
 /*
- *  libcaca       Colour ASCII-Art library
- *  Copyright (c) 2002-2012 Sam Hocevar <sam@hocevar.net>
- *                All Rights Reserved
+ *  libcaca     Colour ASCII-Art library
+ *  Copyright © 2002—2018 Sam Hocevar <sam@hocevar.net>
+ *              All Rights Reserved
  *
  *  This library is free software. It comes without any warranty, to
  *  the extent permitted by applicable law. You can redistribute it
@@ -26,6 +26,8 @@
 #   define __extern extern __declspec(dllexport)
 #elif defined _WIN32 && !defined __LIBCACA__
 #   define __extern extern __declspec(dllimport)
+#elif defined CACA_ENABLE_VISIBILITY
+#   define __extern extern __attribute__((visibility("default")))
 #else
 #   define __extern extern
 #endif
